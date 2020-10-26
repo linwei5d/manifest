@@ -9,7 +9,19 @@
            fetch="https://github.com/maruos"
            revision="maru-0.6" />
 
-  <project path="build/make" name="android_platform_build" remote="maruos" groups="pdk" >
+  <remote  name="pintaf"
+           fetch="https://github.com/pintaf"
+           revision="maru-0.7" />
+
+  <remote  name="deepak-divakar"
+           fetch="https://github.com/deepak-divakar"
+           revision="maru-lineage-17.1" />
+
+  <remote  name="voron00"
+           fetch="https://github.com/voron00"
+           revision="lineage-17.1" />
+
+  <project path="build/make" name="android_build" remote="deepak-divakar" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -19,34 +31,27 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
 
-  <project path="external/lxc" name="platform_external_lxc" remote="maruos" />
-  <project path="frameworks/base" name="android_platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="maruos" />
-  <project path="frameworks/native" name="android_platform_frameworks_native" groups="pdk" remote="maruos" />
-  <project path="packages/apps/Settings" name="android_platform_packages_apps_Settings" remote="maruos" />
+  <project path="external/lxc" name="lxc-android" remote="pintaf" revision="maru-0.7-lxc1" />
+  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="deepak-divakar" />
+  <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="deepak-divakar" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="deepak-divakar" />
   <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" groups="pdk-fs" remote="aosp" />
-  <project path="packages/apps/LineageParts" name="android_packages_apps_LineageParts" remote="maruos" />
-  <project path="prebuilts/busybox" name="platform_prebuilts_busybox" remote="maruos" revision="master" />
+  <project path="packages/apps/LineageParts" name="android_packages_apps_LineageParts" remote="deepak-divakar" />
+  <project path="prebuilts/busybox" name="platform_prebuilts_busybox" remote="pintaf" revision="master" />
 
-  <project path="vendor/maruos" name="vendor_maruos" remote="maruos" />
-  <project path="vendor/maruos/mflinger" name="mflinger" remote="maruos" revision="master" />
+  <project path="vendor/maruos" name="vendor_maruos" remote="deepak-divakar" />
+  <project path="vendor/maruos/mflinger" name="mflinger" remote="deepak-divakar" />
   <project path="vendor/maruos/blueprints" name="blueprints" remote="maruos" revision="master" />
   <project path="vendor/maruos/installer" name="installer" remote="maruos" revision="master" />
 
   <!-- Devices -->
-  <project path="kernel/hammerhead" name="android_kernel_hammerhead" groups="hammerhead" remote="maruos" clone-depth="100"/>
-  <project path="device/lge/hammerhead" name="android_device_lge_hammerhead" groups="device,hammerhead,broadcom_pdk,generic_fs" remote="maruos" />
-
-  <project path="kernel/bullhead" name="android_kernel_bullhead" groups="device,bullhead" remote="maruos" clone-depth="100" />
-  <project path="device/lge/bullhead" name="android_device_lge_bullhead" groups="device,bullhead,pdk" remote="maruos" />
-
-  <project path="kernel/huawei/angler" name="android_kernel_huawei_angler" groups="device,angler" remote="maruos" clone-depth="100" />
-  <project path="device/huawei/angler" name="android_device_huawei_angler" groups="device,angler,pdk" remote="maruos" />
-
-  <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" groups="device,star2lte,pdk" />
-  <project path="kernel/samsung/universal9810" name="android_kernel_samsung_universal9810" groups="device,star2lte" remote="maruos" clone-depth="100" />
-  <project path="device/samsung/universal9810-common" name="android_device_samsung_universal9810-common" groups="device,star2lte,pdk" remote="maruos" />
-  <project path="device/samsung/star2lte" name="android_device_samsung_star2lte" groups="device,star2lte,pdk" remote="maruos" />
-  <project path="kernel/google/marlin" name="android_kernel_google_marlin" groups="device,marlin,sailfish" remote="maruos" clone-depth="100" />
-  <project path="device/google/marlin" name="android_device_google_marlin" groups="device,marlin,sailfish,pdk" remote="maruos" />
-
+  <project path="device/lge/mako" name="android_device_lge_mako" remote="deepak-divakar" revision="maru-lineage-17.1" />
+  <project path="kernel/mako" name="android_kernel_mako" remote="deepak-divakar" revision="maru-lineage-17.1" />
+  <project path="vendor/lge" name="proprietary_vendor_lge" remote="voron00" revision="lineage-17.1" />
+  
+  <project path="device/oneplus/guacamoleb" name="android_device_oneplus_guacamoleb" remote="deepak-divakar" revision="maru-lineage-17.1" />
+  <project path="device/oneplus/common" name="android_device_oneplus_common" remote="deepak-divakar" revision="maru-lineage-17.1" />
+  <project path="device/oneplus/sm8150-common" name="android_device_oneplus_sm8150-common" remote="deepak-divakar" revision="maru-lineage-17.1" />
+  <project path="kernel/oneplus/sm8150" name="android_kernel_oneplus_sm8150" remote="deepak-divakar" revision="maru-lineage-17.1" />
+  <project path="vendor/oneplus" name="proprietary_vendor_oneplus" remote="deepak-divakar" revision="maru-lineage-17.1" />
 </manifest>
