@@ -38,7 +38,8 @@
   <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" groups="pdk-fs" remote="aosp" />
   <project path="packages/apps/LineageParts" name="android_packages_apps_LineageParts" remote="deepak-divakar" />
   <project path="prebuilts/busybox" name="platform_prebuilts_busybox" remote="pintaf" revision="master" />
-  <project path="system/sepolicy" name="android_system_sepolicy" remote="deepak-divakar" revision="maru-lineage-17.1" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="deepak-divakar" />
+  <project path="system/extras" name="android_system_extras" remote="deepak-divakar" />
 
   <project path="vendor/maruos" name="vendor_maruos" remote="deepak-divakar" />
   <project path="vendor/maruos/mflinger" name="mflinger" remote="deepak-divakar" />
