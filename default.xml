@@ -51,7 +51,10 @@
   <project path="kernel/mako" name="android_kernel_mako" remote="deepak-divakar" revision="maru-lineage-17.1" />
   <project path="vendor/lge" name="proprietary_vendor_lge" remote="voron00" revision="lineage-17.1" />
   
+  <project path="device/oneplus/guacamole" name="android_device_oneplus_guacamole" remote="deepak-divakar" revision="maru-lineage-17.1" />
   <project path="device/oneplus/guacamoleb" name="android_device_oneplus_guacamoleb" remote="deepak-divakar" revision="maru-lineage-17.1" />
+  <project path="device/oneplus/hotdog" name="android_device_oneplus_hotdog" remote="deepak-divakar" revision="maru-lineage-17.1" />
+  <project path="device/oneplus/hotdogb" name="android_device_oneplus_hotdogb" remote="deepak-divakar" revision="maru-lineage-17.1" />
   <project path="device/oneplus/common" name="android_device_oneplus_common" remote="deepak-divakar" revision="maru-lineage-17.1" />
   <project path="device/oneplus/sm8150-common" name="android_device_oneplus_sm8150-common" remote="deepak-divakar" revision="maru-lineage-17.1" />
   <project path="kernel/oneplus/sm8150" name="android_kernel_oneplus_sm8150" remote="deepak-divakar" revision="maru-lineage-17.1" />
