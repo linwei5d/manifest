@@ -21,10 +21,6 @@
            fetch="https://github.com/sherylynn"
            revision="maru-0.8" />
 
-  <remote  name="voron00"
-           fetch="https://github.com/voron00"
-           revision="lineage-17.1" />
-
   <project path="build/make" name="android_build" remote="deepak-divakar" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
