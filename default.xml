@@ -48,6 +48,7 @@
   <project path="vendor/maruos/installer" name="installer" remote="maruos" revision="master" />
 
   <!-- Devices -->
+  <project name="vendor/oneplus" path="proprietary_vendor_oneplus" remote="deepak-divakar" revision="maru-lineage-17.1" />
   <!-- raphael -->
   <project name="maru_device_xiaomi_raphael" path="device/xiaomi/raphael" remote="sherylynn" />
   <project name="maru_kernel_xiaomi_raphael" path="kernel/xiaomi/raphael" remote="sherylynn" />
