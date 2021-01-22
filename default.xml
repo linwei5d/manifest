@@ -21,6 +21,10 @@
            fetch="https://github.com/sherylynn"
            revision="maru-0.8" />
 
+  <remote  name="sherylynn-oss"
+           fetch="https://github.com/sherylynn"
+           revision="maru-0.8-oss" />
+
   <!--project path="build/make" name="android_build" remote="deepak-divakar" groups="pdk" -->
   <project path="build/make" name="android_build" remote="sherylynn" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -51,9 +55,9 @@
 
   <!-- Devices -->
   <!-- raphael -->
-  <project name="maru_device_xiaomi_raphael" path="device/xiaomi/raphael" remote="sherylynn" />
-  <project name="maru_kernel_xiaomi_raphael" path="kernel/xiaomi/raphael" remote="sherylynn" />
-  <project name="sherylynn/vendor_xiaomi" path="vendor/xiaomi" remote="github" revision="ten" />
+  <project name="OSS_device_xiaomi_raphael" path="device/xiaomi/raphael" remote="sherylynn" />
+  <project name="maru_kernel_xiaomi_raphael" path="kernel/xiaomi/raphael" remote="sherylynn-oss" />
+  <project name="sherylynn/OSS_vendor_xiaomi_raphael" path="vendor/xiaomi/raphael" remote="github" revision="OSS_ten" />
   <!-- oneplus3-->
   <project name="android_device_oneplus_oneplus3" path="device/oneplus/oneplus3" remote="sherylynn" />
   <project name="LineageOS/android_device_oppo_common" path="device/oppo/common" remote="github" revision="lineage-17.1" />
