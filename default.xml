@@ -53,7 +53,7 @@
   <project path="prebuilts/busybox" name="platform_prebuilts_busybox" remote="pintaf" revision="master" />
   <!--project path="system/sepolicy" name="android_system_sepolicy" remote="deepak-divakar" /-->
   <project path="system/sepolicy" name="android_system_sepolicy" remote="maru-0.9" />
-  <project path="system/extras" name="android_system_extras" remote="deepak-divakar" />
+  <!--project path="system/extras" name="android_system_extras" remote="deepak-divakar" /-->
 
   <!--project path="vendor/maruos" name="vendor_maruos" remote="deepak-divakar" /-->
   <project path="vendor/maruos" name="vendor_maruos" remote="sherylynn" />
