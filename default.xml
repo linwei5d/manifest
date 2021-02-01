@@ -45,7 +45,7 @@
 
   <!--project path="vendor/maruos" name="vendor_maruos" remote="deepak-divakar" /-->
   <project path="vendor/maruos" name="vendor_maruos" remote="sherylynn" />
-  <project path="vendor/maruos/mflinger" name="mflinger" remote="deepak-divakar" />
+  <project path="vendor/maruos/mflinger" name="mflinger" remote="sherylynn" />
   <project path="vendor/maruos/blueprints" name="blueprints" remote="maruos" revision="master" />
   <project path="vendor/maruos/installer" name="installer" remote="maruos" revision="master" />
 
