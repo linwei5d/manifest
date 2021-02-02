@@ -16,6 +16,6 @@
   <project path="hardware/qcom-caf/sm8150/audio" name="sherylynn/android_hardware_qcom_audio" remote="github" revision="qemu-8150" />
 
   <!-- xiaomi camera -->
-  <project name="sherylynn/vendor_ANXCamera" path="vendor/ANXCamera" remote="github" revision="maru-0.8" />
+  <!--project name="sherylynn/vendor_ANXCamera" path="vendor/ANXCamera" remote="github" revision="maru-0.8" /-->
 
 </manifest>
