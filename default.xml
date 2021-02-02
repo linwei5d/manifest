@@ -51,6 +51,6 @@
 
   <!-- Devices -->
   <include name="devices/oneplus3.xml" />
-  <include name="devices/raphael_oss.xml" />
+  <include name="devices/raphael.xml" />
 
 </manifest>
