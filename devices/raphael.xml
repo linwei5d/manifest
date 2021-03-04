@@ -18,4 +18,14 @@
   <!-- xiaomi camera -->
   <!--project name="sherylynn/vendor_ANXCamera" path="vendor/ANXCamera" remote="github" revision="maru-0.8" /-->
 
+  <!-- build soong for macos overrides -->
+  <remove-project path="build/soong" name="LineageOS/android_build_soong" />
+
+  <!-- build soong for macos -->
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="sherylynn" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+
 </manifest>
