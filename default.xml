@@ -51,6 +51,4 @@
 
   <!-- Devices -->
   <include name="devices/oneplus8pro.xml" />
-  <include name="devices/raphael.xml" />
-
 </manifest>
