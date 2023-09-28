@@ -50,7 +50,7 @@
   <project path="vendor/maruos/installer" name="installer" remote="maruos" revision="master" />
 
   <!-- Devices -->
-  <include name="devices/oneplus3.xml" />
+  <include name="devices/oneplus8pro.xml" />
   <include name="devices/raphael.xml" />
 
 </manifest>
