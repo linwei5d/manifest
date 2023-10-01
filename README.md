@@ -12,7 +12,7 @@ To initialize your local repository using the Maru OS trees, use a command like 
 
 Then to sync up:
 
-    repo sync --jobs=12 --current-branch --no-clone-bundle
+    repo sync --jobs=24 --current-branch --no-clone-bundle
 
 
 ## Contributing
