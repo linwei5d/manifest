@@ -3,7 +3,7 @@
 
   <remote  name="github"
            fetch="http://github.com" 
-           revision="refs/heads/lineage-17.1"/>
+           revision="lineage-17.1"/>
   
   <remote  name="private"
            fetch="ssh://git@github.com" />
