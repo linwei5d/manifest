@@ -5,7 +5,7 @@
            fetch="http://github.com" 
            revision="lineage-17.1"/>
   <remote  name="lineage"
-           fetch="https://mirrors.tuna.tsinghua.edu.cn/git/lineageOS/"
+           fetch="http://mirrors.tuna.tsinghua.edu.cn/git/lineageOS/"
            review="review.lineageos.org" />
   <remote  name="private"
            fetch="ssh://git@github.com" />
