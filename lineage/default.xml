@@ -11,7 +11,7 @@
            fetch="ssh://git@github.com" />
 
   <remote  name="aosp"
-           fetch="http://aosp.tuna.tsinghua.edu.cn"
+           fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
            revision="refs/tags/android-10.0.0_r45" />
 
